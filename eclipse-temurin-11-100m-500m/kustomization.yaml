@@ -1,0 +1,22 @@
+bases:
+  - ../base
+namePrefix: eclipse-temurin-11-100m-500m-
+commonLabels:
+  java: eclipse-temurin-11-100m-500m
+patchesStrategicMerge:
+  - |-
+    apiVersion: v1
+    kind: Pod
+    metadata:
+      name: java
+    spec:
+      containers:
+        - name: java
+          image: eclipse-temurin:11
+          resources:
+            limits:
+              cpu: 100m
+              memory: 500Mi
+            requests:
+              cpu: 100m
+              memory: 500Mi
