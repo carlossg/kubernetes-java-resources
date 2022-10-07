@@ -6,21 +6,28 @@ metadata:
     app: java
 spec:
   containers:
-  - name: "java"
-    image: ""
-    resources:
-      limits:
-        ephemeral-storage: 100Mi
-        # cpu: "1"
-        # memory: 1Gi
-      requests:
-        ephemeral-storage: 100Mi
-        # cpu: "1"
-        # memory: 1Gi
-    command:
-    - "sh"
-    args:
-    - "-c"
-    - "java -XshowSettings:vm -XX:+PrintFlagsFinal -version | grep 'Use.*GC *= true'"
-        # - "-XX:MaxRAMPercentage="
+    - name: "java"
+      image: ""
+      resources:
+        limits:
+          ephemeral-storage: 100Mi
+          # cpu: "1"
+          # memory: 1Gi
+        requests:
+          ephemeral-storage: 100Mi
+          # cpu: "1"
+          # memory: 1Gi
+      command:
+        - "sh"
+      args:
+        - "-c"
+        - "java -XshowSettings:vm -XX:+PrintFlagsFinal -version | grep 'Use.*GC *= true'; java /data/Main.java"
+          # - "-XX:MaxRAMPercentage="
+      volumeMounts:
+        - name: "main"
+          mountPath: "/data"
+  volumes:
+    - name: "main"
+      configMap:
+        name: "main"
   restartPolicy: Never

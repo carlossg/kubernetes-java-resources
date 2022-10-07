@@ -1,2 +1,6 @@
 resources:
-- java.yaml
+  - java.yaml
+configMapGenerator:
+  - name: main
+    files:
+      - Main.java

@@ -3,6 +3,6 @@
 Running
 
 ```bash
-for d in eclipse-temurin-*; do kubectl create -k $d; done
-kail -n default
+for d in eclipse-temurin-*; do kubectl delete -k $d; kubectl create -k $d; done
+kail -n default --since 2m
 ```
