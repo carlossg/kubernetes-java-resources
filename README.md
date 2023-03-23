@@ -17,16 +17,6 @@ kubectl get pods -l app=java -o go-template='{{range .items}}{{.metadata.name}}{
 ## Output
 
 ```
-eclipse-temurin-11-100m-500m-java	VM settings:
-eclipse-temurin-11-100m-500m-java	    Max. Heap Size (Estimated): 123.75M
-eclipse-temurin-11-100m-500m-java	    Using VM: OpenJDK 64-Bit Server VM
-eclipse-temurin-11-100m-500m-java
-eclipse-temurin-11-100m-500m-java	openjdk version "11.0.18" 2023-01-17
-eclipse-temurin-11-100m-500m-java	OpenJDK Runtime Environment Temurin-11.0.18+10 (build 11.0.18+10)
-eclipse-temurin-11-100m-500m-java	OpenJDK 64-Bit Server VM Temurin-11.0.18+10 (build 11.0.18+10, mixed mode, sharing)
-eclipse-temurin-11-100m-500m-java	     bool UseMaximumCompactionOnSystemGC           = true                                      {product} {default}
-eclipse-temurin-11-100m-500m-java	     bool UseSerialGC                              = true                                      {product} {ergonomic}
-eclipse-temurin-11-100m-500m-java	availableProcessors: 1
 eclipse-temurin-11-1024m-2g-java	VM settings:
 eclipse-temurin-11-1024m-2g-java	    Max. Heap Size (Estimated): 512.00M
 eclipse-temurin-11-1024m-2g-java	    Using VM: OpenJDK 64-Bit Server VM
@@ -67,16 +57,6 @@ eclipse-temurin-11-500m-1g-java	OpenJDK 64-Bit Server VM Temurin-11.0.18+10 (bui
 eclipse-temurin-11-500m-1g-java	     bool UseMaximumCompactionOnSystemGC           = true                                      {product} {default}
 eclipse-temurin-11-500m-1g-java	     bool UseSerialGC                              = true                                      {product} {ergonomic}
 eclipse-temurin-11-500m-1g-java	availableProcessors: 1
-eclipse-temurin-17-100m-500m-java	VM settings:
-eclipse-temurin-17-100m-500m-java	    Max. Heap Size (Estimated): 123.75M
-eclipse-temurin-17-100m-500m-java	    Using VM: OpenJDK 64-Bit Server VM
-eclipse-temurin-17-100m-500m-java
-eclipse-temurin-17-100m-500m-java	openjdk version "17.0.6" 2023-01-17
-eclipse-temurin-17-100m-500m-java	OpenJDK Runtime Environment Temurin-17.0.6+10 (build 17.0.6+10)
-eclipse-temurin-17-100m-500m-java	OpenJDK 64-Bit Server VM Temurin-17.0.6+10 (build 17.0.6+10, mixed mode, sharing)
-eclipse-temurin-17-100m-500m-java	     bool UseMaximumCompactionOnSystemGC           = true                                      {product} {default}
-eclipse-temurin-17-100m-500m-java	     bool UseSerialGC                              = true                                      {product} {ergonomic}
-eclipse-temurin-17-100m-500m-java	availableProcessors: 1
 eclipse-temurin-17-1024m-2g-java	VM settings:
 eclipse-temurin-17-1024m-2g-java	    Max. Heap Size (Estimated): 512.00M
 eclipse-temurin-17-1024m-2g-java	    Using VM: OpenJDK 64-Bit Server VM
@@ -117,16 +97,6 @@ eclipse-temurin-17-500m-1g-java	OpenJDK 64-Bit Server VM Temurin-17.0.6+10 (buil
 eclipse-temurin-17-500m-1g-java	     bool UseMaximumCompactionOnSystemGC           = true                                      {product} {default}
 eclipse-temurin-17-500m-1g-java	     bool UseSerialGC                              = true                                      {product} {ergonomic}
 eclipse-temurin-17-500m-1g-java	availableProcessors: 1
-eclipse-temurin-19-100m-500m-java	VM settings:
-eclipse-temurin-19-100m-500m-java	    Max. Heap Size (Estimated): 123.75M
-eclipse-temurin-19-100m-500m-java	    Using VM: OpenJDK 64-Bit Server VM
-eclipse-temurin-19-100m-500m-java
-eclipse-temurin-19-100m-500m-java	openjdk version "19.0.2" 2023-01-17
-eclipse-temurin-19-100m-500m-java	OpenJDK Runtime Environment Temurin-19.0.2+7 (build 19.0.2+7)
-eclipse-temurin-19-100m-500m-java	OpenJDK 64-Bit Server VM Temurin-19.0.2+7 (build 19.0.2+7, mixed mode, sharing)
-eclipse-temurin-19-100m-500m-java	     bool UseMaximumCompactionOnSystemGC           = true                                      {product} {default}
-eclipse-temurin-19-100m-500m-java	     bool UseSerialGC                              = true                                      {product} {ergonomic}
-eclipse-temurin-19-100m-500m-java	availableProcessors: 1
 eclipse-temurin-19-1024m-2g-java	VM settings:
 eclipse-temurin-19-1024m-2g-java	    Max. Heap Size (Estimated): 512.00M
 eclipse-temurin-19-1024m-2g-java	    Using VM: OpenJDK 64-Bit Server VM
