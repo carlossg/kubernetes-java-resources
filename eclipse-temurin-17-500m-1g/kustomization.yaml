@@ -1,8 +1,8 @@
 bases:
   - ../base
-namePrefix: eclipse-temurin-11-250m-512m-
+namePrefix: eclipse-temurin-17-500m-1g-
 commonLabels:
-  java: eclipse-temurin-11-250m-512m
+  java: eclipse-temurin-17-500m-1g
 patchesStrategicMerge:
   - |-
     apiVersion: v1
@@ -12,11 +12,11 @@ patchesStrategicMerge:
     spec:
       containers:
         - name: java
-          image: eclipse-temurin:11
+          image: eclipse-temurin:17
           resources:
             limits:
-              cpu: 250m
-              memory: 512Mi
+              cpu: 500m
+              memory: 1Gi
             requests:
-              cpu: 250m
-              memory: 512Mi
+              cpu: 500m
+              memory: 1Gi
